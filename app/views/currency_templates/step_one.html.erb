@@ -1,1 +1,8 @@
-hi
+<h1>Currency pairs</h1>
+<ul>
+  <% @array_of_symbols.each do |a_symbol| %>
+  <a href="/forex/<%= a_symbol %>">
+    <li>Convert 1 <%= a_symbol %> to...</li>
+  </a>
+  <% end %>
+</ul>
